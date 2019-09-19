@@ -25,3 +25,13 @@ npm start
 * React
 * React-Hot-Reload
 * Parcel
+
+## Reference
+
+* [Nodejs](https://nodejs.org/en/)
+* [React](https://reactjs.org/docs/getting-started.html)
+* [CSS](https://developer.mozilla.org/zh-TW/docs/Web/CSS)
+* Git Tutorial
+    * [Git Chinese](https://backlog.com/git-tutorial/tw/intro/intro2_1.html)
+    * [Git English](https://www.atlassian.com/git/tutorials)
+* [Visual Studio Code](https://code.visualstudio.com)

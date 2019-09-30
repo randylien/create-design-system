@@ -12,6 +12,7 @@ const App = () => {
       </h1>
       <Pantone bgColor="#56d9f6" color="#303030">#56d9f6</Pantone>
       <Pantone bgColor="#00b3e3" color="#303030">#00b3e3</Pantone>
+      <Pantone bgColor="#143044">#143033</Pantone>
     </div>
   );
 };

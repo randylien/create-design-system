@@ -1,12 +1,18 @@
-import { hot } from 'react-hot-loader';
+import { hot } from 'react-hot-loader'; //this module is for dev only.
 import React from 'react';
-import { HelloMessage } from './hello-message';
+import { HelloMessage } from './Demo/hello-message';
+import { Pantone } from './Pantone/Pantone';
+
 
 const App = () => {
   return (
-    <h1>
-      <HelloMessage name="SuperTubes" />
-    </h1>
+    <div>
+      <h1>
+        <HelloMessage name="SuperTubes" />
+      </h1>
+      <Pantone bgColor="#56d9f6" color="#303030">#56d9f6</Pantone>
+      <Pantone bgColor="#00b3e3" color="#303030">#00b3e3</Pantone>
+    </div>
   );
 };
 

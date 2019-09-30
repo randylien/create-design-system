@@ -2,6 +2,17 @@
 
 This is a design system skeleton project.
 
+## Why this project?
+
+The purpose of this project is to create a minimal design system tooling.
+
+It should cover those tools:
+
+    * React
+    * React-Hot-Reload
+    * Parcel
+    * styled-components
+
 
 ## Project structure
 
@@ -10,12 +21,12 @@ This is a design system skeleton project.
     * Please grouping your components in `components`
 * components/App.js
     * Compose our components to demo.
-* statics
-    * Image assets or font files
+* pub
+    * Files you need to access in the code like images or fonts.
 * themes
-    * We will create different themes and it should be here.
+    * We will create different themes.
 * index.js
-    * The entry point of our React project, and it also apply hot-module loader to  update result when saving files.
+    * The entry point of this project, and it also apply hot-module loader to  update result when saving files.
 
 ## Install
 
@@ -36,13 +47,6 @@ It will install packages automactically.
 ```
 npm start
 ```
-
-## What's inside
-
-* React
-* React-Hot-Reload
-* Parcel
-* styled-components
 
 ## Git Commands
 
@@ -69,11 +73,33 @@ npm start
 
 Since we have known CSS and JavaScript (just understand the basic syntax), the fundamental of nowdays technology.
 We use [styled-components](https://www.styled-components.com) to styling our design system.
-styled-components is a solid and popular css-in-js solution. It helps to elimitate the gap between CSS and JavaScript.
+styled-components is a solid and popular css-in-js solution. It connects CSS and JavaScript in the same place.
 With styled-components, you can use CSS syntax in JavaScript via [tagged template literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates).
 
+### Define a component via styled-components
 
+```jsx
+// always remember to import react and styled-components in the beginning
+import React from 'react';
+import styled from 'styled-components';
 
+/* declare a styled-component named Pantone, its HTML tag would be div.
+ * styled-component supports tag template literals. Put your css rules inside the pair of back-tick.
+ * It can support template's placeholder to embed JavaScript like ${props => props.color || "#fff"};
+*/
+const Pantone = styled.div`
+    padding: 1em;
+    display: inline-block;
+    margin: 0.5em;
+    color: ${props => props.color || "#fff"};
+    background: ${props => props.bgColor || "#00b3e3"};
+    border: none;
+    text-transform: uppercase;
+`;
+
+export { Pantone };
+// Remember to export your component
+```
 
 
 
@@ -90,3 +116,4 @@ With styled-components, you can use CSS syntax in JavaScript via [tagged templat
 * GitHub PR
     * [About Pull Requests English](https://help.github.com/en/articles/about-pull-requests)
     * [Pull Requests Chinese](https://gitbook.tw/chapters/github/pull-request.html)
+* [React Developer Tool](https://reactjs.org/blog/2015/09/02/new-react-developer-tools.html#installation)

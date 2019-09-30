@@ -21,10 +21,12 @@ This is a design system skeleton project.
 
 Please install [Node.js](https://nodejs.org/en/) first, and clone this project.
 
-Change your working directory into this project and execute this command.
+You also need to [install yarn](https://yarnpkg.com/en/docs/install).
+
+After installation, change your working directory into this project and execute this command.
 
 ```
-npm install
+yarn install
 ```
 
 It will install packages automactically.

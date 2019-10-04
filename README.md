@@ -16,7 +16,6 @@ It should cover those tools:
 
 ## Project structure
 
-
 * components
     * Please grouping your components in `components`
 * components/App.js
@@ -80,7 +79,6 @@ With styled-components, you can use CSS syntax in JavaScript via [tagged templat
 
 ```jsx
 // always remember to import react and styled-components in the beginning
-import React from 'react';
 import styled from 'styled-components';
 
 /* declare a styled-component named Pantone, its HTML tag would be div.
@@ -93,7 +91,7 @@ const Pantone = styled.div`
     margin: 0.5em;
     color: ${props => props.color || "#fff"};
     background: ${props => props.bgColor || "#00b3e3"};
-    border: none;
+    border: 1px solid black;
     text-transform: uppercase;
 `;
 

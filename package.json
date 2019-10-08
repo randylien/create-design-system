@@ -5,10 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "@hot-loader/react-dom": "^16.9.0",
+    "@svgr/cli": "^4.3.3",
+    "@svgr/parcel-plugin-svgr": "^4.3.3",
     "components": "^0.1.0",
     "parcel-bundler": "^1.12.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "reflexbox": "^4.0.6",
     "styled-components": "^4.3.2",
     "styled-system": "^5.1.2"
   },
